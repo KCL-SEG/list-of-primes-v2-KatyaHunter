@@ -7,6 +7,9 @@ def primes(number_of_primes):
 	numPrimesFound = 0
 	isPrime = True
 
+	if number_of_primes <= 0:
+		raise ValueError("The value of number of primes cannot be 0 or negative")
+
 	while numPrimesFound != number_of_primes:
 		isPrime = True
 	
